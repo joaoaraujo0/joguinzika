@@ -9,6 +9,10 @@ TagManager:
   - Bullet
   - Ground
   - Pickup
+  - Obstacle
+  - Coin
+  - CoinEspecial
+  - Portal
   layers:
   - Default
   - TransparentFX
