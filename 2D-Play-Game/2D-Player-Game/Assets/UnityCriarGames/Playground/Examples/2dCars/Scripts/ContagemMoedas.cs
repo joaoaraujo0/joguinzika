@@ -36,8 +36,11 @@ public class ContagemMoedas : MonoBehaviour
         {
             Debug.Log("Jogador entro no portal");
         }
-    }
-
-
 
 }
+
+}
+
+
+
+
