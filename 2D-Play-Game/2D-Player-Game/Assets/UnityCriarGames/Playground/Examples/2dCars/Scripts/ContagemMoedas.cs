@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+
 public class ContagemMoedas : MonoBehaviour
 {
 
@@ -14,6 +15,7 @@ public class ContagemMoedas : MonoBehaviour
     {
         if (other.CompareTag("Coin"))
         {
+            AudioManager.Instance.PlaySFX("Moeda");
             Debug.Log("Player collected");
             coin += 10;
             Debug.Log("Coin received: " + coin);
@@ -24,6 +26,7 @@ public class ContagemMoedas : MonoBehaviour
 
         if (other.CompareTag("CoinEspecial"))
         {
+            AudioManager.Instance.PlaySFX("Moeda");
             Debug.Log("Player collected");
             coin += 20;
             Debug.Log("Coin received: " + coin);
