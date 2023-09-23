@@ -45,4 +45,16 @@ public class CarInputController : MonoBehaviour
         carBody.AddTorque(-movement * speedCarBody * Time.fixedDeltaTime);
     }
 
+    public void ControleFrente(){
+        frontTireRigiBody.AddTorque(-1 * 1000 * Time.fixedDeltaTime);    
+        backTireRigiBody.AddTorque(-1 * 1000 * Time.fixedDeltaTime);
+        carBody.AddTorque(-1 * 10 * Time.fixedDeltaTime);
+    }
+
+      public void ControleAtras(){
+        frontTireRigiBody.AddTorque(1 * 1000 * Time.fixedDeltaTime);    
+        backTireRigiBody.AddTorque(1 * 1000 * Time.fixedDeltaTime);
+        carBody.AddTorque(1 * 10 * Time.fixedDeltaTime);
+    }
+
 }
